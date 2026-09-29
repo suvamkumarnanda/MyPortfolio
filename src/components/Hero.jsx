@@ -67,11 +67,14 @@ const Hero = () => {
 
         {/* Description */}
         <p
-          className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 animate-slide-up"
+          className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto mb-12 animate-slide-up leading-relaxed"
           style={{ animationDelay: '0.4s' }}
         >
-          Backend-focused engineer with 2+ years of experience building scalable
-          microservices and secure REST APIs using Node.js, Express, and PostgreSQL
+          Full Stack Developer with 3+ years of experience building scalable backend systems using Node.js,
+          TypeScript, Express.js, PostgreSQL, and MongoDB, along with front-end development using React.js.
+          Hands-on experience with REST APIs, cloud infrastructure, security, and CI/CD, alongside strong
+          knowledge of Generative AI, LLMs, RAG, LangChain, LangGraph, and AI agents. Skilled in delivering
+          secure, scalable, production-ready software.
         </p>
 
         {/* CTA Buttons */}

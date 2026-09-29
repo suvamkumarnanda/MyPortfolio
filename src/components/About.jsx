@@ -29,18 +29,18 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: '2+ Years',
+      title: '3+ Years',
       description: 'Professional Experience',
     },
     {
       icon: Award,
-      title: 'Enterprise',
-      description: 'E-Commerce Platform',
+      title: '2 Companies',
+      description: 'Brightcanyon & MAQ Software',
     },
     {
       icon: Zap,
-      title: 'Microservices',
-      description: 'Architecture Expert',
+      title: '2 Enterprise',
+      description: 'E-commerce + Analytics Platforms',
     },
   ];
 
@@ -93,13 +93,14 @@ const About = () => {
                 <Code size={24} /> Profile
               </h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Backend-focused Software Engineer with 2+ years of experience designing
-                scalable microservices and secure REST APIs using Node.js, Express, and
-                PostgreSQL.
+                Backend-focused Software Engineer with 3+ years of experience delivering
+                scalable backend systems across two enterprise platforms: an e-commerce SaaS
+                platform at Brightcanyon Solutions and an analytics platform at MAQ Software.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Proven track record in building authentication systems with JWT, OTP, and
-                RBAC, optimizing data workflows, and integrating React frontends.
+                Skilled in designing secure REST APIs, microservices, authentication flows,
+                and database optimization using Node.js, Express, PostgreSQL, MongoDB, and
+                modern deployment practices.
               </p>
             </div>
 
@@ -108,12 +109,12 @@ const About = () => {
                 <Zap size={24} /> Expertise
               </h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Skilled in Docker-based deployments, CI/CD pipelines (GitHub Actions,
-                GitLab), and cloud infrastructure (AWS EC2, S3).
+                Skilled in Docker-based deployments, CI/CD pipelines, Azure DevOps, and cloud
+                infrastructure across AWS and enterprise SaaS environments.
               </p>
               <p className="text-gray-300 leading-relaxed">
                 Collaborative in Agile teams, with a strong emphasis on clean code,
-                modular architecture, and automated testing using Jest and Playwright.
+                modular architecture, performance optimization, and secure production-ready delivery.
               </p>
             </div>
           </div>
