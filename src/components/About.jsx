@@ -166,7 +166,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400">Location</p>
-                  <p className="text-white">Bangalore, Karnataka, India</p>
+                  <p className="text-white">New Delhi, India</p>
                 </div>
               </div>
             </div>

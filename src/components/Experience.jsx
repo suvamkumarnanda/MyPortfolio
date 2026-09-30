@@ -59,6 +59,7 @@ const Experience = () => {
   const education = {
     degree: 'Bachelor of Technology',
     institution: 'Gandhi Institute for Technological Advancement (GITA)',
+    cgpa: '8.92',
     duration: 'July 2019 - July 2023',
     location: 'Bhubaneswar, Odisha',
   };
@@ -177,6 +178,7 @@ const Experience = () => {
                     <Building size={18} className="text-purple-400" />
                     <p className="text-xl">{education.institution}</p>
                   </div>
+                  <p className="text-gray-300">CGPA: {education.cgpa}</p>
                   <div className="flex flex-wrap gap-4 text-gray-400">
                     <div className="flex items-center gap-2">
                       <Calendar size={16} className="text-purple-400" />

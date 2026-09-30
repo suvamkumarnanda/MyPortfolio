@@ -1,5 +1,60 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Code, Database, Server, Cloud, TestTube, Layout } from 'lucide-react';
+import {
+  Bot,
+  BrainCircuit,
+  Cloud,
+  Code,
+  Code2,
+  Coffee,
+  Cpu,
+  Database,
+  FlaskConical,
+  GitBranch,
+  KeyRound,
+  Layout,
+  Radio,
+  Server,
+  ShieldCheck,
+  Sparkles,
+  TestTube,
+  Workflow,
+} from 'lucide-react';
+import {
+  SiChai,
+  SiCss,
+  SiDocker,
+  SiEslint,
+  SiExpress,
+  SiGit,
+  SiGithubactions,
+  SiGraphql,
+  SiHtml5,
+  SiJavascript,
+  SiJest,
+  SiJunit5,
+  SiKubernetes,
+  SiLangchain,
+  SiLanggraph,
+  SiMocha,
+  SiMongodb,
+  SiMongoose,
+  SiMysql,
+  SiNetlify,
+  SiNextdotjs,
+  SiNginx,
+  SiNodedotjs,
+  SiOllama,
+  SiOkta,
+  SiPostgresql,
+  SiPostman,
+  SiPrettier,
+  SiReact,
+  SiRedux,
+  SiSpringboot,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+} from 'react-icons/si';
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -57,6 +112,23 @@ const Skills = () => {
       ],
     },
     {
+      category: 'Generative AI',
+      icon: Code,
+      color: 'from-violet-500 to-fuchsia-500',
+      skills: [
+        'LLMs',
+        'Prompt Engineering',
+        'RAG',
+        'LangChain',
+        'LangGraph',
+        'AI Agents',
+        'AWS Bedrock',
+        'Ollama',
+        'Embeddings',
+        'Vector Databases',
+      ],
+    },
+    {
       category: 'DevOps & Tools',
       icon: Cloud,
       color: 'from-orange-500 to-red-500',
@@ -94,6 +166,58 @@ const Skills = () => {
       ],
     },
   ];
+
+  const skillIcons = {
+    'JavaScript (ES6+)': SiJavascript,
+    TypeScript: SiTypescript,
+    Java: Coffee,
+    HTML: SiHtml5,
+    CSS: SiCss,
+    MongoDB: SiMongodb,
+    MySQL: SiMysql,
+    PostgreSQL: SiPostgresql,
+    Mongoose: SiMongoose,
+    'Node.js': SiNodedotjs,
+    'Express.js': SiExpress,
+    'Spring Boot': SiSpringboot,
+    'REST API': Code2,
+    GraphQL: SiGraphql,
+    WebSockets: Radio,
+    'JWT Authentication': KeyRound,
+    OAuth2: ShieldCheck,
+    Okta: SiOkta,
+    LLMs: Cpu,
+    'Prompt Engineering': Sparkles,
+    RAG: Workflow,
+    LangChain: SiLangchain,
+    LangGraph: SiLanggraph,
+    'AI Agents': Bot,
+    'AWS Bedrock': Cloud,
+    Ollama: SiOllama,
+    Embeddings: BrainCircuit,
+    'Vector Databases': Database,
+    Docker: SiDocker,
+    NGINX: SiNginx,
+    Git: SiGit,
+    'GitHub Actions': SiGithubactions,
+    'CI/CD': GitBranch,
+    Postman: SiPostman,
+    'AWS (EC2, S3, ELB)': Cloud,
+    Vercel: SiVercel,
+    Netlify: SiNetlify,
+    Kubernetes: SiKubernetes,
+    'React.js': SiReact,
+    'Next.js': SiNextdotjs,
+    'Redux Toolkit': SiRedux,
+    'Tailwind CSS': SiTailwindcss,
+    'Jest.js': SiJest,
+    Mocha: SiMocha,
+    Chai: SiChai,
+    ESLint: SiEslint,
+    Playwright: FlaskConical,
+    JUnit: SiJunit5,
+    Prettier: SiPrettier,
+  };
 
   return (
     <section
@@ -146,8 +270,13 @@ const Skills = () => {
                   {categoryData.skills.map((skill, skillIndex) => (
                     <span
                       key={skillIndex}
-                      className="bg-slate-700/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-slate-600/50 hover:border-purple-500/50 hover:bg-slate-700 transition-all duration-300 cursor-default"
+                      className="inline-flex items-center gap-2 bg-slate-700/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm border border-slate-600/50 hover:border-purple-500/50 hover:bg-slate-700 transition-all duration-300 cursor-default"
                     >
+                      {React.createElement(skillIcons[skill], {
+                        size: 16,
+                        'aria-hidden': true,
+                        className: 'shrink-0',
+                      })}
                       {skill}
                     </span>
                   ))}
