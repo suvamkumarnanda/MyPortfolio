@@ -100,7 +100,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Bangalore, Karnataka, India',
+      value: 'New Delhi, India',
       href: null,
     },
   ];
