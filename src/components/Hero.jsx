@@ -40,7 +40,7 @@ const Hero = () => {
          <div className="mb-8 animate-fade-in">
           <div className="w-48 h-48 mx-auto rounded-full border-4 border-purple-500 shadow-2xl shadow-purple-500/50 overflow-hidden mb-8 bg-white transform hover:scale-110 transition-transform duration-300">
             <img 
-              src="/profile2.jpg" 
+              src={`${import.meta.env.BASE_URL}profile2.jpg`}
               alt="Suvam Nanda" 
               className="w-full h-60 object-cover object-center scale-110" 
             />
